@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Seguranca: connect-src 'none' impede QUALQUER envio de dados pela rede -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
+<title>Teste de QI Aberto / Open IQ Test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <strong id="marca">QI Aberto</strong>
+  <nav aria-label="Idioma / Language">
+    <button id="btn-pt" data-lang="pt" title="Português">🇧🇷 PT</button>
+    <button id="btn-en" data-lang="en" title="English">🇺🇸 EN</button>
+  </nav>
+</header>
+<main id="tela"></main>
+<footer id="rodape"></footer>
+<script src="app.js"></script>
+</body>
+</html>

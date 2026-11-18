@@ -1,0 +1,22 @@
+:root { --fundo:#eef2f6; --tinta:#14213d; --azul:#2b50aa; --borda:#c3cdda; --suave:#5b6b82; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--fundo); color:var(--tinta); font:17px/1.55 Georgia, "Times New Roman", serif; }
+header { display:flex; justify-content:space-between; align-items:center; padding:14px 20px; border-bottom:2px solid var(--tinta); }
+header strong { font-size:1.2rem; letter-spacing:.02em; }
+nav button { font:inherit; font-size:.9rem; margin-left:6px; padding:6px 12px; background:#fff; border:2px solid var(--borda); border-radius:6px; cursor:pointer; }
+nav button.ativo { border-color:var(--azul); background:var(--azul); color:#fff; }
+main { max-width:640px; margin:0 auto; padding:28px 20px; }
+h1 { font-size:2.1rem; line-height:1.15; margin:0 0 14px; }
+p { margin:0 0 14px; }
+.suave { color:var(--suave); font-size:.92rem; }
+.caixa { background:#fff; border:2px solid var(--tinta); border-radius:10px; padding:16px; margin-bottom:16px; }
+.barra { height:8px; background:var(--borda); border-radius:4px; margin-bottom:18px; overflow:hidden; }
+.barra i { display:block; height:100%; background:var(--azul); }
+.cena { display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:center; font:700 1.6rem/1 ui-monospace, Menlo, monospace; padding:18px 8px; }
+.cena svg { background:var(--fundo); border-radius:8px; }
+.ops { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.op { background:#fff; border:2px solid var(--borda); border-radius:8px; padding:12px; min-height:64px; font:700 1.3rem ui-monospace, Menlo, monospace; color:var(--tinta); cursor:pointer; display:flex; align-items:center; justify-content:center; }
+.op:hover, .op:focus-visible { border-color:var(--azul); outline:none; }
+.principal { font:inherit; font-weight:700; background:var(--azul); color:#fff; border:0; border-radius:8px; padding:12px 24px; cursor:pointer; }
+.qi { font-size:4.5rem; font-weight:700; line-height:1; margin:6px 0; }
+@media (prefers-reduced-motion:no-preference) { .barra i { transition:width .3s; } }
