@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Seguranca: connect-src 'none' impede QUALQUER envio de dados pela rede -->
+<!-- Seguranca: connect-src 'none' impede QUALQUER envio pela rede. Para ativar o contador opcional,
+     troque 'none' pela URL do servidor (a mesma de URL_CONTADOR em contador.js). -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; form-action 'none'; base-uri 'none'">
 <title>Teste de QI Aberto / Open IQ Test</title>
 <link rel="stylesheet" href="style.css">
@@ -17,7 +18,9 @@
   </nav>
 </header>
 <main id="tela"></main>
+<section id="stats"></section>
 <footer id="rodape"></footer>
+<script src="contador.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
