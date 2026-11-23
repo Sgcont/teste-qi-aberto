@@ -1,0 +1,5 @@
+
+contador.json
+contador.json.tmp
+__pycache__/
+*.pyc
